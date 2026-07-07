@@ -28,9 +28,6 @@ export function downloadCSV(result, dobLabel) {
   URL.revokeObjectURL(url);
 }
 
-// Lightweight "PDF" export using the browser's native print-to-PDF, scoped
-// to a printable summary. Avoids pulling in a heavy PDF library for a bonus
-// feature; user picks "Save as PDF" in the print dialog.
 export function exportPDF() {
   window.print();
 }
